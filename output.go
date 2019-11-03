@@ -12,15 +12,10 @@ import(
 var handler windows.Handle
 
 func gotoXY(x, y int16) {
-
-	var csbi windows.ConsoleScreenBufferInfo
-	err := windows.GetConsoleScreenBufferInfo(handler, &csbi)
-	if err != nil {
-		log.Fatalln(err)
-	}
-	csbi.CursorPosition.X = x
-	csbi.CursorPosition.Y = y
-	err = winterm.SetConsoleCursorPosition(uintptr(handler), (winterm.COORD)(csbi.CursorPosition))
+	err := winterm.SetConsoleCursorPosition(uintptr(handler), winterm.COORD{
+		X: x,
+		Y: y,
+	})
 	if err != nil {
 		log.Fatalln(err)
 	}
