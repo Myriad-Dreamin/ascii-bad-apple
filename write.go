@@ -26,7 +26,7 @@ func write(l, r int) {
 }
 
 
-func Write() {
+func initWrite() {
 	initTable()
 	var wg sync.WaitGroup
 
@@ -38,6 +38,11 @@ func Write() {
 		}(i)
 	}
 	wg.Wait()
+}
+
+
+func Write() {
+	initWrite()
 	sugar.WithWriteFile(func(logFile *os.File) {
 
 		var start, end, frameStart = time.Now(), time.Now(), time.Now()

@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6daa317d-8cce-4865-b04b-8b569f7b9da4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ascii-bad-apple.exe" beforeDir="false" afterPath="$PROJECT_DIR$/ascii-bad-apple.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output.go" beforeDir="false" afterPath="$PROJECT_DIR$/output.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.log" beforeDir="false" afterPath="$PROJECT_DIR$/test.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/write.go" beforeDir="false" afterPath="$PROJECT_DIR$/write.go" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -51,7 +48,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Go Test.BenchmarkWrite in github.com/Myriad-Dreamin/ascii-bad-apple">
     <configuration name="go build github.com/Myriad-Dreamin/ascii-bad-apple" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="ascii-bad-apple" />
       <working_directory value="$PROJECT_DIR$" />
@@ -60,8 +57,20 @@
       <package value="github.com/Myriad-Dreamin/ascii-bad-apple" />
       <method v="2" />
     </configuration>
+    <configuration name="BenchmarkWrite in github.com/Myriad-Dreamin/ascii-bad-apple" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="ascii-bad-apple" />
+      <working_directory value="$PROJECT_DIR$" />
+      <framework value="gobench" />
+      <kind value="PACKAGE" />
+      <package value="github.com/Myriad-Dreamin/ascii-bad-apple" />
+      <directory value="$PROJECT_DIR$/" />
+      <filePath value="$PROJECT_DIR$/" />
+      <pattern value="^BenchmarkWrite$" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Test.BenchmarkWrite in github.com/Myriad-Dreamin/ascii-bad-apple" />
         <item itemvalue="Go Build.go build github.com/Myriad-Dreamin/ascii-bad-apple" />
       </list>
     </recent_temporary>
@@ -74,7 +83,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
